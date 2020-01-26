@@ -1,0 +1,14 @@
+[gd_scene format=2]
+
+[node name="Node" type="Node2D"]
+
+[node name="Border" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Border"]
+build_mode = 1
+polygon = PoolVector2Array( 0, 0, 1920, 0, 1920, 1200, 0, 1200 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1920.0
+margin_bottom = 1080.0
+color = Color( 0, 0.635294, 0.803922, 1 )
